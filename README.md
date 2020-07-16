@@ -1,4 +1,4 @@
-the lib folder contains the files, including an app file for each exercice, so we can define the methods & run them in the app file, & test them in the spec file (spec folder).
+For each exercise, there is a file with method definitions and a small "app" file which requires this file and calls the methods. The spec files also require the files with the method definitions and test them.
 
 # How to run the code
 
