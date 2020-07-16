@@ -12,11 +12,11 @@ describe "mairie christmas" do
    describe "get_name_and_email" do
       let(:btc){get_name_and_email(data[10])}
       let(:eth){get_name_and_email(data[20])}
-      it "provides proper data for BTC" do
+      it "provides proper data for Argenteuil" do
          expect(btc.keys.size).to eq(1)
          expect(btc["ARGENTEUIL"]).to eq("christian.bournery@ville-argenteuil.fr")
       end
-      it "provides proper data for ETH" do
+      it "provides proper data for Beauchamp" do
          expect(eth.keys.size).to eq(1)
          expect(eth["BEAUCHAMP"]).to eq("accueil-mairie@ville-beauchamp.fr")
       end
