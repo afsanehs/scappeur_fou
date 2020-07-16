@@ -1,44 +1,68 @@
-#lib folder contains the file + the app file of each exercice, so we can define the methods & run them in the app & test them in the spec file 
+the lib folder contains the files, including an app file for each exercice, so we can define the methods & run them in the app file, & test them in the spec file (spec folder).
 
-#How to run the code : run the app file of each exercice
+# How to run the code
 
-#How to test the code : run "rspec" at the top file 
+Run the app file of each exercice. For example:
 
-##structure of the code : 
+    ruby lib/mairie_christmas.rb
 
-#1.dark_trader : 
-#dark_trader.rb : 
-#the first method, is fetching the list through the XPath 
-#the second method, is extracting & cleaning the name & the price of each rows, and putting them in an array
+# How to test the code
 
-#dark_trader_app.rb :
-#require_relative :it's like copy-pasting the content of the file 
-#data is a variable, get_data is a method, currency_and_price_data is the array with the content, currency_and_price is the fonction defined in the dark_trader.rb file 
+run `rspec`
 
-#dark_trader_spec.rb :
-#the first test checks the output 
-#the second test checks the value of the name & checks if the price is numeric (as price changes we can't check one price in particular)  
+# description of the code
 
-#2.mairie_christmas : 
-#mairie_christmas.rb : 
-#the first method fetches the url extention for each link of the page through the XPath
-#the second method uses the links gathered to get the name & the email of each city, using the XPath
+## dark_trader
 
-#mairie_christmas_app.rb : 
-#create the array "list" which gathers the data (names & emails)
+### dark_trader.rb
 
-#mairie_christmas_spec.rb : 
-#the first test checks the output 
-#the second & third tests check if the value in hard code are the same in the output  
+The first method is fetching the list through the XPath. 
 
-#3.deputee
-#deputees.rb : 
-#the first method fetches the links to each page through css link 
-#the second method gathers the data from each page, and extract the first name, last name, email in a hash  
+The second method is extracting & cleaning the name & the price of each rows, and putting them in an array.
 
-#deputees_app.rb :
-#creates the array containing the data from the deputees.rb file 
+### dark_trader_app.rb
 
-#deputees_spec.rb :
-#the first test checks in hard code the data of one deputee 
-#the second test checks the number of links 
+`data` is a variable, `get_data` is a method, `currency_and_price_data` is the array with the content, `currency_and_price` is the method defined in the `dark_trader.rb file`. 
+
+### dark_trader_spec.rb :
+
+The first test checks the output. 
+
+The second test checks the value of the name & checks if the price is numeric (as the price changes we can't check one price in particular).   
+
+## mairie_christmas
+
+### mairie_christmas.rb 
+
+The first method fetches the url extention for each link of the page through the XPath.
+
+The second method uses the links gathered to get the name & the email of each city, using the XPath.
+
+### mairie_christmas_app.rb
+
+Create the array `list` which gathers the data (names & emails).
+
+### mairie_christmas_spec.rb
+
+The first test checks the output. 
+
+The second & third tests check if the values for a couple randomly chosen ones are as expected.  
+
+## deputee
+
+### deputees.rb
+
+The first method fetches the links to each page through the css link.  
+
+The second method gathers the data from each page, and extract the first name, last name, and email in a hash.  
+
+### deputees_app.rb
+
+Creates the array containing the data from the `deputees.rb` file. 
+
+### deputees_spec.rb
+
+The first test checks in hard code the data of one deputee. 
+
+The second test checks the number of links. 
+
